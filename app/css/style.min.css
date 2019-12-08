@@ -11,8 +11,24 @@ html {
 }
 
 body {
-  font-family: serif;
+  font-family: 'Futura Book', sans-serif;
   font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
 }
 
 .container {
@@ -22,9 +38,9 @@ body {
 
 .button {
   padding: 13px 20px;
+  text-transform: uppercase;
   border: none;
   background-repeat: 2px;
-  text-transform: uppercase;
 }
 
 .button--primary {
@@ -63,4 +79,8 @@ body {
 
 .phone {
   color: #E3B873;
+}
+
+.contacts__phone {
+  margin-right: 45px;
 }
