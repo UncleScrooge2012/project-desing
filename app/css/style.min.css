@@ -32,6 +32,7 @@ body {
 }
 
 .container {
+  width: 85%;
   max-width: 1256px;
   margin: auto;
 }
@@ -48,7 +49,18 @@ body {
   color: #fff;
 }
 
+.button--outline {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   padding: 24px 0;
   background-color: #131313;
 }
@@ -86,10 +98,34 @@ body {
 }
 
 .hero {
+  padding-top: 100px;
   position: relative;
   background: #131313 url("../../img/hero_bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__content {
+  max-width: 670px;
+}
+
+.hero__text {
+  max-width: 500px;
+  font-size: 22px;
+}
+
+.hero__button {
+  margin-right: 20px;
 }
 
 .hero__instagram {
@@ -98,6 +134,27 @@ body {
   top: 0;
   max-width: 80px;
   height: 100%;
+}
+
+.hero__scroll-down {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 247px;
+  min-height: 97px;
+  background-color: #131313;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
 }
 
 .instagram {
@@ -124,4 +181,11 @@ body {
 
 .titel {
   margin: 0;
+  font-family: 'Yeseva One', cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.titel--primary {
+  color: #E3B873;
 }
