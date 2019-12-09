@@ -144,7 +144,7 @@ body {
 .hero {
   padding-top: 100px;
   position: relative;
-  background: #131313 url("../../img/hero_bg.jpg") no-repeat center/cover;
+  background: #131313 url("../img/hero_bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff;
   display: -webkit-box;
@@ -214,7 +214,7 @@ body {
 
 .hero__scroll-down::after {
   content: '';
-  background: url("../../img/arrow-donw.svg") no-repeat center;
+  background: url("../img/arrow-donw.svg") no-repeat center;
   width: 30px;
   height: 30px;
   border: 2px solid #E3B873;
