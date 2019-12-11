@@ -21,25 +21,34 @@ img
   padding: 6rem 0
 
   &-title
-    text-align: center
-    text-transform: uppercase
-    font-family: 'Yeseva One', cursive
-    font-weight: normal
+    text-align: center   
+    
 
     &__heeding
+      font-weight: normal
+      text-transform: uppercase
+      font-family: 'Yeseva One', cursive
       font-size: 2rem
+
+    &__description
+        margin-top: 2.3rem
+        margin: 0 auto
+        font-size: 1.5rem
+        line-height: 135.84%
+        max-width: 30.6rem
+
+    
           
     &__image
-       display: flex
-       justify-content: center
-       align-items: center
-       
+      display: flex
+      justify-content: center
+      align-items: center
 
-    &::before, &::after
-             content: ''
-             width: 3.2rem
-             height: 0.2rem
-             background-color: $primary
-             margin: 0 1rem
-     
-               
+      &::before, &::after
+        content: ''
+        width: 3.2rem
+        height: 0.2rem
+        background-color: $primary
+        margin: 0 1rem
+    
+   
