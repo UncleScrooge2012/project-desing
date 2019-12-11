@@ -379,6 +379,24 @@ img {
   padding: 1.5rem 3.5rem;
 }
 
+@media screen and (max-width: 760px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .types__card {
+    margin-bottom: 6rem;
+  }
+  .card__text {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 8px;
