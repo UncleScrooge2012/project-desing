@@ -14,21 +14,32 @@ body
     font-family: 'Futura Book', sans-serif
     font-size: 1.4rem
 
+img
+  max-width: 100%
 
 .section
+  padding: 6rem 0
+
   &-title
     text-align: center
     text-transform: uppercase
     font-family: 'Yeseva One', cursive
+    font-weight: normal
+
+    &__heeding
+      font-size: 2rem
+          
     &__image
-      display: flex
-      justify-content: center
-      align-items: center
-      &::before, &::after
-        content: ''
-        width: 3.2rem
-        height: 0.2rem
-        background-color: $primary
-        margin: 0 1rem
+       display: flex
+       justify-content: center
+       align-items: center
+       
+
+    &::before, &::after
+             content: ''
+             width: 3.2rem
+             height: 0.2rem
+             background-color: $primary
+             margin: 0 1rem
      
                
