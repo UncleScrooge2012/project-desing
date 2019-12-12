@@ -126,6 +126,71 @@ img {
   padding: 1.8rem 4.2rem;
 }
 
+.label {
+  font-size: 1.5rem;
+}
+
+.label--light {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-button: 1px solid rgba(54, 54, 54, 0.3);
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 0.7rem 0;
+}
+
+.input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.input::-moz-placeholder {
+  color: #fff;
+}
+
+.input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.policy__checkbox:checked + .policy__label::before {
+  background: #E3B873 url("../img/check.svg") no-repeat center/1rem;
+}
+
+.policy__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.policy__label::before {
+  content: '';
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #E3B873;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-right: 0.8rem;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -505,6 +570,86 @@ img {
     line-height: 2.7rem;
     text-align: center;
   }
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__dialog {
+  position: relative;
+  background: #131313 url("../img/bg-lines.svg") no-repeat center;
+  padding: 3.3rem 4.9rem 2.7rem 4.9rem;
+  color: #fff;
+}
+
+.modal__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: transparent url("../img/x-circle.svg") no-repeat;
+  border: none;
+  margin: 1.2rem;
+  cursor: pointer;
+}
+
+.modal__titel {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 3.4rem;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__input {
+  margin-bottom: 4.8rem;
+}
+
+.modal__input:last-of-type {
+  margin-bottom: 1.6rem;
+}
+
+.modal__policy {
+  margin-bottom: 3.8rem;
+}
+
+.modal__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 @media screen and (max-width: 1269px) {

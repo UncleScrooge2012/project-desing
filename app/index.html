@@ -34,7 +34,7 @@
 
                 <div class="contacts menu__contacts">
                     <a class="phone contacts__phone" href="tel:79997683299">+7 (999) 768-32-99</a>
-                    <button class="button contacts__button  button--primary">Заказать звонок</button>
+                    <button class="button contacts__button  button--primary" data-toggle='modal'>Заказать звонок</button>
                 </div>
 
             </div>
@@ -67,7 +67,7 @@
                         материалов за счет организации работы
                     </p>
 
-                    <button class="button hero__button button--primary">Рассчитать стоимость</button>
+                    <button class="button hero__button button--primary" data-toggle='modal'>Рассчитать стоимость</button>
                     <button class="button hero__button button--outline">Отправить заявку</button>
 
                 </div>
@@ -300,16 +300,41 @@
                     </div>
         </section>
 
-
+        
 
 
     </main>
 
+    <div class="modal ">
+        <div class="modal__dialog">
+            <button class="modal__close"></button>
+            <h3 class="modal__titel">Оставьте заявку и наш менеджер свяжется с вами  </h3>
+            <form action="" class="form modal__form">
+                <label for="user-name" class="label label--light form__label">Имя</label>
+                <input type="name" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:">
+                <label for="user-phone" class="label label--light form__label" >Телефон</label>
+                <input type="tel" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
+                <label for="user-emall" class="label label--light form__label" >Emal</label>
+                <input type="emall" class="input form__input modal__input" id="user-emall" placeholder="Ваш email">
+                <div class="policy modal__policy">
+                    <input type="checkbox" name="policy-checkbox" class="policy__checkbox " id="policy-checkbox" checked>
+                    <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+                </div>
+
+                <button class="button button--primary modal__button">Отправить заявку</button>
+
+            </form>
+
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="jc/libs.min.js"></script>
-    <script src="jc/main.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
