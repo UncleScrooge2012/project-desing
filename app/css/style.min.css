@@ -438,14 +438,14 @@ img {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #959595;
-  margin-bottom: 3.6rem;
+  margin-bottom: 2.8rem;
   padding-left: 2.3rem;
   padding-top: 0.7rem;
 }
 
 .card__pricetag {
   position: absolute;
-  left: 0;
+  left: 0.5rem;
   bottom: -2.5rem;
   font-family: 'Yeseva One', cursive;
   font-size: 1.8rem;
@@ -459,6 +459,10 @@ img {
 
 .card__pricetag--1 {
   padding: 1.5rem 3.5rem 1.5rem 4.5rem;
+}
+
+.card__pricetag--3 {
+  left: 0;
 }
 
 @media screen and (max-width: 760px) {
@@ -524,7 +528,7 @@ img {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #959595;
-  margin-bottom: 3.6rem;
+  margin-bottom: 2.8rem;
   padding-left: 2.3rem;
   padding-top: 0.7rem;
 }
@@ -551,8 +555,17 @@ img {
   margin-top: -13.2rem;
 }
 
+.design__card--titel {
+  padding-left: 0.8rem;
+  padding-top: 0.2rem;
+}
+
+.design__card--list {
+  margin-bottom: 2.8rem;
+}
+
 .design__card--list3 {
-  padding-bottom: 0.1 rem;
+  padding-bottom: 0.5rem;
 }
 
 .design__card--p1 {
@@ -562,12 +575,13 @@ img {
 
 .design__card--p2 {
   left: 0;
-  padding-right: 4.8rem;
+  padding-right: 7.5rem;
 }
 
 .design__card--p3 {
   left: 0;
-  padding-right: 4.8rem;
+  padding-right: 7.2rem;
+  left: 0.5rem;
 }
 
 .row {
