@@ -21,6 +21,13 @@ $(document).ready(function () {
         closseBtn = $('.modal__close');
 
         
-    modalBtn.on('click' )
+    modalBtn.on('click', function () {
+        modal.toggleClass('modal--visible');
+    });
+
+    closseBtn.on('click', function () {
+        modal.toggleClass('modal--visible');
+    });
+   
 
 });
