@@ -40,8 +40,17 @@ img {
   padding: 6rem 0;
 }
 
+.section--dark {
+  background-color: #131313;
+  color: #fff;
+}
+
 .section-title {
   text-align: center;
+}
+
+.section-title--left {
+  text-align: left;
 }
 
 .section-title__heeding {
@@ -50,6 +59,34 @@ img {
   font-family: 'Yeseva One', cursive;
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  line-height: 138.6%;
+}
+
+.section-title__heeding--primary {
+  color: #E3B873;
+}
+
+.section-title__word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-title__word::after {
+  content: '';
+  width: 9rem;
+  height: 0.1rem;
+  background-color: #E3B873;
+  margin-left: 2.8rem;
+}
+
+.section-title__text {
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  max-width: 44.2rem;
 }
 
 .section-title__description {
@@ -84,6 +121,27 @@ img {
   width: 85%;
   max-width: 1256px;
   margin: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col-30 {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.col-50 {
+  width: 50%;
 }
 
 .button {
@@ -278,6 +336,17 @@ img {
   background: rgba(19, 19, 19, 0.7);
 }
 
+.hero::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background-color: #131313;
+}
+
 .hero__content {
   position: relative;
   max-width: 67rem;
@@ -305,6 +374,7 @@ img {
 }
 
 .hero__scroll-down {
+  z-index: 3;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -388,27 +458,130 @@ img {
   color: #E3B873;
 }
 
-.types__section-title {
-  line-height: 2.8rem;
-  margin-bottom: 3rem;
-}
-
-.row {
+.swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.col {
-  -ms-flex-preferred-size: 31.7%;
-      flex-basis: 31.7%;
+.swiper-slide__text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 3.4rem;
+  padding-bottom: 2.8rem;
+}
+
+.swiper-slide__heading {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #E3B873;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+
+.swiper-slide__value {
+  display: block;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 4.2rem;
+  width: 6.5rem;
+  height: 1.4rem;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-prev.svg") no-repeat center;
+}
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -0.2rem;
+}
+
+@media screen and (min-width: 759px) {
+  .swiper-pagination--none {
+    display: none;
+  }
+  .swiper--img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .row.projects__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    font-size: 14px;
+  }
+  .swiper-slide__text {
+    margin-bottom: 0;
+  }
+  .swiper-slide__text--botton {
+    padding-bottom: 7rem;
+  }
+  .swiper-button-prev--center {
+    left: 25%;
+  }
+  .swiper-button-next--center {
+    left: 61.2% !important;
+  }
+  .swiper-pagination--center {
+    left: 43% !important;
+  }
+  .section-title__heeding--primary {
+    text-align: center;
+    margin-bottom: 2.2rem;
+  }
+  .section-title__word {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-title__word::after {
+    display: none;
+  }
+  .section-title__text {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 0 1rem;
+    margin-bottom: 3.6rem;
+  }
+  .col-50 {
+    min-width: 95%;
+  }
+}
+
+.types__section-title {
+  line-height: 2.8rem;
+  margin-bottom: 3rem;
 }
 
 .card__text {

@@ -20,9 +20,15 @@ img
 .section
   padding: 6rem 0
 
-  &-title
-    text-align: center   
+  &--dark
+    background-color: $dark  
+    color: $light 
     
+  &-title
+    text-align: center  
+    
+    &--left
+      text-align: left
 
     &__heeding
       font-weight: normal
@@ -30,7 +36,23 @@ img
       font-family: 'Yeseva One', cursive
       font-size: 2rem
       margin-bottom: 1.5rem
-
+      line-height: 138.6% 
+      &--primary
+         color: $primary
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 9rem
+        height: 0.1rem
+        background-color: $primary
+        margin-left: 2.8rem
+    &__text
+      font-size: 1.8rem
+      line-height: 2.9rem
+      max-width: 44.2rem
+      
     &__description
         margin-top: 2.3rem
         margin: 0 auto
