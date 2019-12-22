@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -20,7 +21,7 @@
 
             <div class="menu">
 
-                <div class="logo menu__logo">
+                <div class="logo menu__logo wow fadeInLeft">
                     Repair Design Project
                 </div>
 
@@ -58,20 +59,20 @@
 
                 <div class="hero__content">
 
-                    <h1 class="titel hero__titel">
+                    <h1 class="titel hero__titel wow fadeInLeft" data-wow-delay="0.1s">
                         турецкий ремонт
                         в&nbsp;<span class="titel--primary">Ростове-на-дону</span>
                     </h1>
 
-                    <p class="hero__text">
+                    <p class="hero__text wow fadeInLeft" data-wow-delay="0.4s">
                         Получите готовый ремонт под ключ в срок
                         с экономией рабочего времени до 45 дней и 20% от стоимости
                         материалов за счет организации работы
                     </p>
 
-                    <button class="button hero__button button--primary" data-toggle='modal'>Рассчитать
+                    <button class="button hero__button button--primary wow fadeInLeft delay-2s" data-toggle='modal'>Рассчитать
                         стоимость</button>
-                    <button class="button hero__button button--outline">Отправить заявку</button>
+                    <button class="button hero__button button--outline wow fadeInLeft delay-1s">Отправить заявку</button>
 
                 </div>
                 <!-- /.hero__content -->
@@ -88,7 +89,7 @@
         <section class="section section--dark projects">
 
             <div class="container">
-                <div class="section-title section-title--left  section-title--center">
+                <div class="section-title section-title--left  section-title--center wow ">
                     <h2 class="section-title__heeding section-title__heeding--primary">Завершенные <span
                             class="section-title__word">проекты</span></h2>
                     <p class="section-title__text">
@@ -98,7 +99,7 @@
                 </div>
                 <div class="row projects__row">
                     <div class="col-50">
-                        
+
                         <!-- /.section-title -->
 
                         <!-- Slider main container -->
@@ -219,9 +220,9 @@
                                 <div class="swiper-slide"><img src="img/slider-img.jpg" alt=""></div>
                                 <div class="swiper-slide"><img src="img/slider-img.jpg" alt=""></div>
                                 <div class="swiper-slide"><img src="img/slider-img.jpg" alt=""></div>
-                                
+
                             </div>
-                            <!-- If we need pagination -->                          
+                            <!-- If we need pagination -->
                         </div>
 
 
@@ -244,7 +245,7 @@
 
             <div class="container">
 
-                <div class="section-title">
+                <div class="section-title control__section-title section-title--light">
                     <h2 class="section-title__heeding">онлайн контроль</h2>
 
                     <div class="section-title__image">
@@ -256,6 +257,39 @@
 
             </div>
             <!-- /.container -->
+
+            <div class="video control__video">
+                <img src="img/play-icon.svg" alt="" class="video__play">
+
+            </div>
+
+            <p class="control__text">
+                На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы
+                можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с
+                одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
+
+            </p>
+            <form action="" class="form control__form">
+                <div class="control__input-group">
+                    <label for="user-name" class="label  form__label control__form-label">Имя</label>
+                    <input type="name" class="input form__input control__input" id="user-name"
+                        placeholder="Как вас зовут:">
+                </div>
+                <div class="control__input-group">
+                    <label for="user-phone" class="label  form__label control__form-label ">Телефон</label>
+                    <input type="tel" class="input form__input control__input" id="user-phone"
+                        placeholder="Ваш номер телефона:">
+                </div>
+                
+                <button class="button button--primary control__button">Отправить</button>
+ 
+                <div class="policy control__policy">
+                    <input type="checkbox" name="policy-checkbox" class="policy__checkbox " id="policy-checkbox"
+                        checked>
+                    <label for="policy-checkbox" class="policy__label control__policy-label ">я соглашаюсь с обработкой данных</label>
+                </div>
+
+            </form>
 
         </section>
 
@@ -274,7 +308,7 @@
 
                 <div class="row">
                     <div class="col-30">
-                        <div class="card types__card">
+                        <div class="card types__card wow fadeInRight" data-wow-delay="1s" >
                             <img src="img/card-1.jpg" alt="" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__titel">Косметический ремонт</h3>
@@ -300,7 +334,7 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-30">
-                        <div class="card types__card">
+                        <div class="card types__card wow fadeInRight"   data-wow-delay="2s" >
                             <img src="img/card-2.jpg" alt="" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__titel">Капитальный ремонт</h3>
@@ -327,7 +361,7 @@
                     </div>
                     <!-- /.col -->
                     <div class="col-30">
-                        <div class="card types__card">
+                        <div class="card types__card wow fadeInRight "  data-wow-delay="3s">
                             <img src="img/card-3.jpg" alt="" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__titel">Дизайнерский ремонт</h3>
@@ -379,7 +413,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="card design__card">
+                    <div class="card design__card wow fadeInRight"  data-wow-delay="1s" >
                         <img src="img/design-1.jpg" alt="" class="card__image design__card--img">
                         <div class="card__text design__card--text">
                             <h3 class="card__titel design__card--titel">Минимальный</h3>
@@ -399,7 +433,7 @@
                         </div>
                         <!-- /.card__text -->
                     </div>
-                    <div class="card design__card">
+                    <div class="card design__card wow fadeInRight"  data-wow-delay="2s">
                         <img src="img/design-2.jpg" alt="" class="card__image design__card--img">
                         <div class="card__text design__card--text">
                             <h3 class="card__titel design__card--titel">Стандартный</h3>
@@ -422,7 +456,7 @@
                         </div>
                         <!-- /.card__text -->
                     </div>
-                    <div class="card design__card">
+                    <div class="card design__card wow fadeInRight"  data-wow-delay="3s">
                         <img src="img/design-3.jpg" alt="" class="card__image design__card--img">
                         <div class="card__text design__card--text">
                             <h3 class="card__titel design__card--titel">Полный</h3>
@@ -460,7 +494,7 @@
                 </div>
         </section>
 
-    
+
 
     </main>
 
@@ -470,12 +504,12 @@
             <h3 class="modal__titel">Оставьте заявку и наш менеджер свяжется с вами </h3>
             <form action="" class="form modal__form">
                 <label for="user-name" class="label label--light form__label">Имя</label>
-                <input type="name" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:">
+                <input type="name" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
                 <label for="user-phone" class="label label--light form__label">Телефон</label>
-                <input type="tel" class="input form__input modal__input" id="user-phone"
+                <input type="tel" class="input form__input modal__input input--light" id="user-phone"
                     placeholder="Ваш номер телефона:">
                 <label for="user-emall" class="label label--light form__label">Emal</label>
-                <input type="emall" class="input form__input modal__input" id="user-emall" placeholder="Ваш email">
+                <input type="emall" class="input form__input modal__input input--light" id="user-emall" placeholder="Ваш email">
                 <div class="policy modal__policy">
                     <input type="checkbox" name="policy-checkbox" class="policy__checkbox " id="policy-checkbox"
                         checked>
@@ -496,6 +530,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
