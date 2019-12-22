@@ -14,6 +14,26 @@
     
 // });
 
+toggleModal = () => {
+    const modal = document.querySelector('.modal');
+          modal.addEventListener('click', (event) => {
+            let target = event.target;
+            if (target.classList.contains('modal') && !target.classList.contains('modal__dialog')) {
+              hideModal();
+            }
+          });
+          hideModal = () => {
+            modal.classList.remove('modal--visible');
+          };
+          document.onkeydown = function(evt) {
+      
+            if (evt.keyCode == 27) {
+              modal.classList.remove('modal--visible');
+            }
+          };
+  };
+  toggleModal();
+
 
 $(document).ready(function () {
     var modal = $('.modal'),
