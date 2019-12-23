@@ -117,10 +117,10 @@ $(document).ready(function () {
 
         messages: {
           userName: {
-            required: "Имя Обязательно",
+            required: "Имя обязательно",
             minlength: "Имя не короче двух букв"
           },
-          userPhone: "Телефон обизателен",
+          userPhone: "Телефон обязателен",
           userEmail: {
             required: "Обязательно укажите emall",
             email: "Введите в формате: name@domain.com"
@@ -146,10 +146,10 @@ $(document).ready(function () {
 
       messages: {
         userName: {
-          required: "Имя Обязательно",
+          required: "Имя обязательно",
           minlength: "Имя не короче двух букв"
         },
-        userPhone: "Телефон Обязателен"
+        userPhone: "Телефон обязателен"
         
       }
        
@@ -175,20 +175,54 @@ $(document).ready(function () {
 
     messages: {
       userName: {
-        required: "Имя Обязательно",
+        required: "Имя обязательно",
         minlength: "Имя не короче двух букв"
       },
-      userPhone: "Телефон Обязателен",
+      userPhone: "Телефон обязателен",
       userText: "Задайте вопрос?"
   
     }
      
 });
 
-
-
     $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
 
-   
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', {
+              center: [55.751999, 37.617734],
+              zoom: 15
+          }, {
+              searchControlProvider: 'yandex#search'
+          }),
+  
+          // Создаём макет содержимого.
+          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+              '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          ),
+  
+          myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+              hintContent: 'Наш офис',
+              balloonContent: 'Вход по пропускам'
+          }, {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#image',
+              // Своё изображение иконки метки.
+              iconImageHref: 'img/pin.png',
+              // Размеры метки.
+              iconImageSize: [32, 32],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-5, -38]
+          })
+  
+      myMap.geoObjects
+          .add(myPlacemark);
+          
+  });
+
+
+
+
 
 }); 

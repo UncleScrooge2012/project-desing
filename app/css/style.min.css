@@ -969,6 +969,7 @@ input.invalid {
   padding: 3.4rem 18.1rem;
   margin: auto;
   color: #fff;
+  margin-bottom: 5.2rem;
 }
 
 .footer__titel {
@@ -1033,6 +1034,60 @@ input.invalid {
 .footer__menu {
   padding: 2.4rem 0;
   background-color: #131313;
+}
+
+.footer__map {
+  min-height: 46.5rem;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4.3rem;
+}
+
+.footer__inner-text {
+  padding: 0 2rem;
+  max-width: 58.9rem;
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #E3B873;
+}
+
+.inner__socialnetwork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inner__socialnetwork-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1.5rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background-color: #E3B873;
 }
 
 .modal {
