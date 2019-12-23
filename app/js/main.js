@@ -2,7 +2,7 @@
 //     const modal = document.querySelector('.modal')
 //     const modalBtn = document.querySelectorAll('[data-toggle=modal]')     
 //     const closseBtn = document.querySelector('.modal__close')
-//     const switchModal = () => {
+//     const sftchModal = () => {
 //         modal.classList.toggle('modal--visible')
 //     }
 //     modalBtn.forEach(element => {
@@ -97,5 +97,39 @@ $(document).ready(function () {
 
       new WOW().init()
       
-      
+      $('.modal__form').validate({
+        errorClass: "invalid",
+        errorElement: "div",
+        rules: {
+          // simple rule, converted to {required:true}
+          userName: {
+            required: true,
+            minlength: 2,
+            maxlength: 15,
+          },
+          userPhone: "required",
+          // compound rule
+          userEmail: {
+            required: true,
+            email: true
+          }
+        },
+
+        messages: {
+          userName: {
+            required: "Имя Обязательно",
+            minlength: "Имя не короче двух букв"
+          },
+          userPhone: "Телефон обизателен",
+          userEmail: {
+            required: "Обязательно укажите emall",
+            email: "Введите в формате: name@domain.com"
+          }
+        }
+         
+    });
+
+
+    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
+
 }); 

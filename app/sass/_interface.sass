@@ -54,11 +54,11 @@
         &:checked +            
             .policy__label
                 &::before                   
-                    background: $primary url('../img/check.svg') no-repeat center / 1rem
-                    
+                    background: $primary url('../img/check.svg') no-repeat center / 1rem                    
     &__label
         display: flex
         align-items: center
+        font-size: 1.6rem
         &::before
            content: ''
            width: 1.8rem
@@ -67,7 +67,8 @@
            border-radius: 1px
            cursor: pointer
            margin-right: 0.8rem
-
+        &--center
+            justify-content: center
 
 
 .scroll-up
@@ -78,11 +79,11 @@
     align-items: center
     bottom: 0
     right: 0
-    width: 17.6rem
-    min-height: 6.92rem
-    background-color: #131313
+    width: 18rem
+    min-height: 7rem
+    background-color: $dark
     font-family: 'Yeseva One', cursive
-    font-size: 0.865rem
+    font-size: 1rem
     letter-spacing: 0px
     text-transform: uppercase
     color: #ffffff
@@ -91,8 +92,15 @@
         content: ''
         background: url(../img/arrow-donw.svg) no-repeat center
         transform: rotate(180deg)
-        width: 30px
-        height: 30px
-        border: 1px solid #e3b873
+        width: 3rem
+        height: 3rem
+        border: 0.2rem solid $primary
         border-radius: 50%
-        margin-right: 18px
+        margin-right: 1.8rem
+
+div
+    &.invalid
+        color: tomato
+input
+    &.invalid
+        border-bottom: 1px solid tomato
