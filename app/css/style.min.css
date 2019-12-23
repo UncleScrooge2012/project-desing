@@ -300,6 +300,8 @@ img {
 }
 
 div.invalid {
+  position: absolute;
+  bottom: -2rem;
   color: tomato;
 }
 
@@ -582,6 +584,7 @@ input.invalid {
 }
 
 .control__input-group {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -993,6 +996,7 @@ input.invalid {
 }
 
 .footer__input-group {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1098,6 +1102,7 @@ input.invalid {
 }
 
 .modal__input-group {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

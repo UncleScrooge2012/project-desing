@@ -129,7 +129,66 @@ $(document).ready(function () {
          
     });
 
+  $('.control__form').validate({
+      errorClass: "invalid",
+      errorElement: "div",
+      rules: {
+        // simple rule, converted to {required:true}
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15,
+        },
+        userPhone: "required"
+        // compound rule
+        
+      },
+
+      messages: {
+        userName: {
+          required: "Имя Обязательно",
+          minlength: "Имя не короче двух букв"
+        },
+        userPhone: "Телефон Обязателен"
+        
+      }
+       
+  });
+
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userPhone: "required",
+      userText: "required"
+
+      // compound rule
+      
+    },
+
+    messages: {
+      userName: {
+        required: "Имя Обязательно",
+        minlength: "Имя не короче двух букв"
+      },
+      userPhone: "Телефон Обязателен",
+      userText: "Задайте вопрос?"
+  
+    }
+     
+});
+
+
 
     $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
+
+   
 
 }); 
