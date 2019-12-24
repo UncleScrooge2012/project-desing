@@ -9,8 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f56ec71d-26f4-4916-9094-0b19d354d331&lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -271,7 +273,7 @@
                 одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
 
             </p>
-            <form action="" class="form control__form">
+            <form action="send.php" method="POST" class="form control__form">
                 <div class="control__input-group">
                     <label for="user-name" class="label  form__label control__form-label">Имя</label>
                     <input type="name" name="userName" class="input form__input control__input" id="user-name"
@@ -509,7 +511,7 @@
 
                 <h3 class="footer__titel">Остались вопросы?</h3>
 
-                <form action="" class="form footer__form">
+                <form action="send.php" method="POST" class="form footer__form">
                     <div class="input-group footer__input-group">
                         <label for="user-name" class="label label--light form__label">Имя</label>
                         <input type="name" name="userName" class="input form__input footer__input input--light"
@@ -609,7 +611,7 @@
         <div class="modal__dialog">
             <button class="modal__close"></button>
             <h3 class="modal__titel">Оставьте заявку и наш менеджер свяжется с вами </h3>
-            <form action="" class="form modal__form">
+            <form action="send.php" method="POST" class="form modal__form">
                 <div class="input-group modal__input-group">
                     <label for="user-name" class="label label--light form__label">Имя</label>
                     <input type="name" name="userName" class="input form__input modal__input input--light"
@@ -647,12 +649,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=f56ec71d-26f4-4916-9094-0b19d354d331&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="js/jquery.mask.min.js"></script>   
+    
     <script src="js/main.js"></script>
 </body>
 
